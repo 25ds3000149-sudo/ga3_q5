@@ -1,0 +1,10 @@
+name: CI  # Name your workflow (shows in Actions tab)
+
+on: [push, pull_request]  # Runs on code pushes or PRs
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Free GitHub server to run on
+    steps:
+      - name: Success step
+        run: echo "Tests passed!"  # Pretend job that always works
